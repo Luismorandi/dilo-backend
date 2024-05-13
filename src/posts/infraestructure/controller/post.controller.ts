@@ -11,4 +11,11 @@ export class PostController{
         const post = await this.postService.createPost(body as PostEntityDT0);
         res.send({post})  
  }
+
+
+ public getPosts= async (_req:Request, res: Response)=>{
+    const post = await this.postService.getPosts();
+
+    res.send(post)  
+}
 }

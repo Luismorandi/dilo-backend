@@ -9,5 +9,10 @@ import { PostEntity, PostEntityDT0 } from "../domain/posts.entity";
         const post = await this.postRepository.createPost(input);
         return post
     }
+
+    public async getPosts(): Promise<PostEntity[]>{
+        const posts = await this.postRepository.getPosts();
+        return posts
+    }
 }
 

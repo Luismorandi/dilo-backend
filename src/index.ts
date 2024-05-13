@@ -1,8 +1,8 @@
 import cors from "cors";
 import  express  from "express";
-import dbInit from "./posts/infraestructure/db/mongo";
 import postRoute from "./posts/infraestructure/route/post.route";
 import dotenv from 'dotenv';
+import dbInit from "./config/db/mongo";
 
 dotenv.config();
 

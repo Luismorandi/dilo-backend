@@ -1,6 +1,6 @@
-import { PostUserCase } from "../posts/application/post.UserCase";
-import { PostController } from "../posts/infraestructure/controller/post.controller";
-import { MongoRepository } from "../posts/infraestructure/repository/mongo.respository";
+import { PostUserCase } from "../application/post.UserCase";
+import { PostController } from "../infraestructure/controller/post.controller";
+import { MongoRepository } from "../infraestructure/repository/mongo.repository/mongo.respository";
 
 export const setupPost = () => {
     const postRepository = new MongoRepository(); // Reemplaza MongoRepository con tu repositorio real
